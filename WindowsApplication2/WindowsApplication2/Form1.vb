@@ -31,10 +31,15 @@
         txtOutput &= "Employees: " & arrayEmployees(2) & Environment.NewLine
 
 
+        showmessage()
 
 
         TextBox1.Text = txtOutput
 
 
+    End Sub
+
+    Private Sub showmessage()
+        MessageBox.Show("Hello Again", "Love  to say hello!!!!")
     End Sub
 End Class
