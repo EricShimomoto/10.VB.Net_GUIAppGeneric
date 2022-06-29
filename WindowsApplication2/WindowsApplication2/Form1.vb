@@ -37,7 +37,10 @@
             txtOutput &= "CANNOT VOTE "
         End If
 
+        For i = 1 To 20
+            txtOutput &= i & Environment.NewLine
 
+        Next
         TextBox1.Text = txtOutput
 
 
