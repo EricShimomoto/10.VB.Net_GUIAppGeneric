@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.Age = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -45,11 +46,20 @@ Partial Class Form1
         Me.btnUpdate.Text = "Update"
         Me.btnUpdate.UseVisualStyleBackColor = True
         '
+        'Age
+        '
+        Me.Age.Location = New System.Drawing.Point(209, 458)
+        Me.Age.Name = "Age"
+        Me.Age.Size = New System.Drawing.Size(100, 20)
+        Me.Age.TabIndex = 2
+        Me.Age.Text = "0"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(359, 498)
+        Me.Controls.Add(Me.Age)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "Form1"
@@ -61,4 +71,5 @@ Partial Class Form1
 
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents btnUpdate As Button
+    Friend WithEvents Age As TextBox
 End Class

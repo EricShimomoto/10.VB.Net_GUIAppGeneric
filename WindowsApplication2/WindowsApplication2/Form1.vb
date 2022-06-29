@@ -28,13 +28,20 @@
         arrayEmployees(2) = "Adriano"
 
         Dim joinString As String = Join(arrayEmployees, ", ")
-        txtOutput &= "Employees: " & arrayEmployees(2) & Environment.NewLine
+        txtOutput &= "Employees: " & arrayEmployees(0) & Environment.NewLine
 
 
-        showmessage()
+        If CInt(Age.Text) >= 18 Then
+            txtOutput &= "CAN vote "
+        Else
+            txtOutput &= "CANNOT VOTE "
+        End If
 
 
         TextBox1.Text = txtOutput
+
+
+
 
 
     End Sub
@@ -42,4 +49,6 @@
     Private Sub showmessage()
         MessageBox.Show("Hello Again", "Love  to say hello!!!!")
     End Sub
+
+
 End Class
