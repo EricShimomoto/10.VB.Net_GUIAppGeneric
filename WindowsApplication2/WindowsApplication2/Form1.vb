@@ -32,14 +32,13 @@
 
 
         If CInt(Age.Text) >= 18 Then
-            txtOutput &= "CAN vote "
+            txtOutput &= "CAN vote " & Environment.NewLine
         Else
-            txtOutput &= "CANNOT VOTE "
+            txtOutput &= "CANNOT VOTE " & Environment.NewLine
         End If
 
         For i = 1 To 20
             txtOutput &= i & Environment.NewLine
-
         Next
         TextBox1.Text = txtOutput
 
